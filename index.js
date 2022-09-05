@@ -7,7 +7,7 @@ function handle_form(event){
     // prevent the default form action
     event.preventDefault();
     
-    // get the data that was in the form in a JSON object and get the input name
+    
     const myplayer = Object.fromEntries(new FormData(event.target));
     
     url = base_url + `action=get_players&player_name=${myplayer.name}&APIkey=${api_key}`;
